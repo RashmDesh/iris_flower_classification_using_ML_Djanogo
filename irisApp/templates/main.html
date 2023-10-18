@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris App </title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+
+<body>
+
+<h1>Iris  django Application</h1>
+<hr>
+
+
+<form  action="result">
+  {% csrf_token %}
+    sepal_length:<input type="number" name="sepal_length" required > <br>
+    sepal_width:<input type="number" name="sepal_width" required > <br>
+    petal_length:<input type="number" name="petal_length" required > <br>
+    petal_width:<input type="number" name="petal_width" required > <br>
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
